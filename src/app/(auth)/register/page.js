@@ -36,9 +36,10 @@ const Page = () => {
         <form onSubmit={submitForm}>
             {/* Name */}
             <div>
-                <Label htmlFor="name">Name</Label>
+                <Label htmlFor="name"></Label>
 
                 <Input
+                    placeholder="Nome"
                     id="name"
                     type="text"
                     value={name}
@@ -53,9 +54,10 @@ const Page = () => {
 
             {/* Email Address */}
             <div className="mt-4">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email"></Label>
 
                 <Input
+                    placeholder="Usuário"
                     id="email"
                     type="email"
                     value={email}
@@ -69,9 +71,10 @@ const Page = () => {
 
             {/* Password */}
             <div className="mt-4">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password"></Label>
 
                 <Input
+                    placeholder="Senha"
                     id="password"
                     type="password"
                     value={password}
@@ -86,11 +89,10 @@ const Page = () => {
 
             {/* Confirm Password */}
             <div className="mt-4">
-                <Label htmlFor="passwordConfirmation">
-                    Confirm Password
-                </Label>
+                <Label htmlFor="passwordConfirmation"></Label>
 
                 <Input
+                    placeholder="Confirme sua senha"
                     id="passwordConfirmation"
                     type="password"
                     value={passwordConfirmation}
@@ -111,10 +113,10 @@ const Page = () => {
                 <Link
                     href="/login"
                     className="underline text-sm text-gray-600 hover:text-gray-900">
-                    Already registered?
+                    Já possui cadastro?
                 </Link>
 
-                <Button className="ml-4">Register</Button>
+                <Button className="ml-4">Cadastrar</Button>
             </div>
         </form>
     )

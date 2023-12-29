@@ -47,12 +47,13 @@ const Login = () => {
     return (
         <>
             <AuthSessionStatus className="mb-4" status={status} />
-            <form onSubmit={submitForm}>
+            <form onSubmit={submitForm} className="">
                 {/* Email Address */}
                 <div>
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="email"></Label>
 
                     <Input
+                        placeholder="Usuário"
                         id="email"
                         type="email"
                         value={email}
@@ -67,9 +68,10 @@ const Login = () => {
 
                 {/* Password */}
                 <div className="mt-4">
-                    <Label htmlFor="password">Password</Label>
+                    <Label htmlFor="password"></Label>
 
                     <Input
+                        placeholder="Senha"
                         id="password"
                         type="password"
                         value={password}
@@ -79,13 +81,10 @@ const Login = () => {
                         autoComplete="current-password"
                     />
 
-                    <InputError
-                        messages={errors.password}
-                        className="mt-2"
-                    />
+                    <InputError messages={errors.password} className="mt-2" />
                 </div>
 
-                {/* Remember Me */}
+                {/* Remember Me
                 <div className="block mt-4">
                     <label
                         htmlFor="remember_me"
@@ -104,18 +103,11 @@ const Login = () => {
                             Remember me
                         </span>
                     </label>
-                </div>
-
-                <div className="flex items-center justify-end mt-4">
-                    <Link
-                        href="/forgot-password"
-                        className="underline text-sm text-gray-600 hover:text-gray-900">
-                        Forgot your password?
-                    </Link>
-
-                    <Button className="ml-3">Login</Button>
-                </div>
+                </div> */}
             </form>
+            <div className="flex items-center justify-center mt-24">
+                <p>2023</p>
+            </div>
         </>
     )
 }

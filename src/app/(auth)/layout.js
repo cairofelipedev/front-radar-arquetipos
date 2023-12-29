@@ -13,9 +13,10 @@ const Layout = ({ children }) => {
                 <AuthCard
                     logo={
                         <Link href="/">
-                            <ApplicationLogo className="w-20 h-20 fill-current text-gray-500" />
+                            <img src="/logo-radar.png" className="w-50 h-30 fill-current" />
                         </Link>
                     }>
+                        <h1 className="font-black text-5xl text-center pb-8 px-10">Radar de arquétipos</h1>
                     {children}
                 </AuthCard>
             </div>
