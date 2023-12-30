@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-    title: 'My Brands',
+    title: 'Algorithm',
 }
 
 const Brands = () => {
